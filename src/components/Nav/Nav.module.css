@@ -1,0 +1,128 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+}
+
+/* Contenedor principal del navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: linear-gradient(135deg, #f8ba0f, #ec2828);
+  color: white;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* Contenedor fluido */
+.containerFluid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* Logo */
+.navbarBrand {
+  text-decoration: none;
+  color: #fff;
+}
+.navbarBrand img {
+  position: absolute;
+  top: 3px;
+  width: 100px;
+  height: 55px;
+  object-fit: cover;
+}
+
+/* Botón hamburguesa */
+.navbarToggleButton {
+  font-size: 24px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  z-index: 1000; /* Asegura que el botón esté al frente */
+}
+
+/* Menú oculto en móviles */
+.navbarCollapse {
+  position: absolute;
+  top: 60px;
+  left: -100%;
+  width: 100%;
+  background-color: #d32f2f;
+  list-style: none;
+  text-align: center;
+  padding: 20px 0;
+  transition: left 0.3s ease-in-out;
+}
+
+/* Mostrar el menú cuando se activa */
+.navbarCollapse.show {
+  left: 0;
+}
+
+.navbarUl {
+  list-style: none;
+  padding: 0;
+}
+
+.navbarLi {
+  padding: 10px 0;
+}
+
+/* Botones del menú */
+.navbarButton {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 18px;
+  cursor: pointer;
+  transition: color 0.3s;
+  padding: 10px 20px;
+}
+
+.navbarButton:hover {
+  color: #ffc107; /* Amarillo UX */
+}
+
+/* Media Queries: Tablet y Escritorio */
+@media (min-width: 768px) {
+  .navbarBrand img {
+    width: 110px;
+    height: 65px;
+  }
+  
+  .navbarToggleButton {
+    display: none; /* Ocultar botón hamburguesa */
+  }
+
+  .navbarCollapse {
+    position: static;
+    display: flex;
+    width: auto;
+    background: none;
+    padding: 0;
+  }
+
+  .navbarUl {
+    display: flex;
+  }
+
+  .navbarLi {
+    padding: 0;
+  }
+}

@@ -1,0 +1,128 @@
+/* Contenedor del formulario */
+.formRegisterTitle {
+    font-size: 30px;
+    text-align: center;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+.formRegisterSubTitle {
+    font-size: 14px;
+    text-align: center;
+    color: #f35a5a;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.form {
+    max-width: 500px;
+    width: 90%;
+    margin: 150px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Campos del formulario */
+.formGroup {
+    margin-bottom: 15px;
+}
+
+.formLabel {
+    display: block;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.formInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.formInput:focus {
+    border-color: #6e8efb;
+    outline: none;
+}
+
+/* Términos y condiciones */
+.termsPolicy {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.termsPolicy a {
+    color: #d32f2f;
+    text-decoration: none;
+}
+
+.termsPolicy a:hover {
+    text-decoration: underline;
+}
+
+/* Botón habilitado */
+.enabledButton {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: linear-gradient(135deg, #ec2828, #f8ba0f);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enabledButton:hover {
+    background: linear-gradient(135deg, #f8ba0f, #ec2828);
+}
+
+/* Botón deshabilitado */
+.disabledButton {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    background: #ccc;
+    color: #666;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: not-allowed;
+}
+
+/* Cuenta existente */
+.existAccount {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.existAccount a {
+    color: #d32f2f;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.existAccount a:hover {
+    text-decoration: underline;
+}
+
+/* 📱 Responsive para tablet */
+@media (min-width: 768px) {
+    .formInput {
+        font-size: 18px;
+    }
+}
+
+/* 💻 Responsive para laptop */
+@media (min-width: 1024px) {
+}

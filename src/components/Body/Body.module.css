@@ -1,0 +1,596 @@
+.welcomeSection {
+    width: 100%;
+    padding: 50px 0;
+    background: #eeeaea;
+  }
+  
+  .welcomeContent {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .welcomeImg {
+    width: 50%;
+    max-width: 500px;
+    border-radius: 10px;
+  }
+  
+  .welcomeContentText {
+    flex: 1;
+  }
+  
+  .welcomeTitle {
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .welcomeTxt {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.5;
+  }
+  
+  .toggleButton {
+    background-color: #ff4d4d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .toggleButton:hover {
+    background-color: #cc0000;
+  }
+  
+  /* 📌 Responsive para Tablet */
+  @media (max-width: 768px) {
+    .welcomeContent {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .welcomeImg {
+      width: 80%;
+    }
+  }
+  
+  /* 📌 Responsive para Móvil */
+  @media (max-width: 480px) {
+    .welcomeTitle {
+      font-size: 1.5rem;
+    }
+  
+    .welcomeTxt {
+      font-size: 0.9rem;
+    }
+  
+    .toggleButton {
+      padding: 8px 16px;
+    }
+  }
+
+  /* ------------------------------- STYLE FOR WHO WE ARE ------------------------------- */
+
+  .who_we_areSection {
+    padding: 80px 20px;
+    background: #e0f3ff; /* Fondo claro */
+  }
+
+.who_we_areContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.who_we_areContentText {
+    margin-bottom: 20px;
+}
+
+.who_we_areTitle {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.who_we_areTxt {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.who_we_areImg {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+    .who_we_areContent {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        gap: 20px;
+    }
+
+    .who_we_areContentText {
+        flex: 1;
+    }
+
+    .who_we_areImg {
+        max-width: 350px;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+    .who_we_areTitle {
+        font-size: 32px;
+    }
+
+    .who_we_areTxt {
+        font-size: 18px;
+    }
+}
+
+  /* ------------------------------- STYLE FOR THE AI EXPERIMENTAL ------------------------------- */
+
+/* Contenedor principal */
+.aiExperimentalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 85px 20px;
+  background: #1e1e1e;
+  color: white;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Contenido de la IA */
+.aiExperimentalContent {
+  padding: 20px;
+}
+
+/* Título */
+.aiExperimentalTitle {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #4db8ff;
+  margin-bottom: 10px;
+}
+
+/* Texto */
+.aiExperimentalTxt {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #ccc;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Imagen */
+.aiExperimentalImg {
+  width: 80%;
+  max-width: 250px;
+  margin-top: 20px;
+  filter: drop-shadow(0px 4px 6px rgba(255, 255, 255, 0.3));
+}
+
+/* Responsivo */
+
+/* Tablets */
+@media (min-width: 768px) {
+  .aiExperimentalContainer {
+      flex-direction: row;
+      text-align: left;
+  }
+
+  .aiExperimentalContent {
+      flex: 1;
+  }
+
+  .aiExperimentalImg {
+      flex: 1;
+      max-width: 300px;
+      margin-left: 20px;
+  }
+}
+
+/* Computadoras */
+@media (min-width: 1024px) {
+  .aiExperimentalContent {
+    max-width: 700px;
+  }
+  .aiExperimentalTitle {
+      font-size: 2.5rem;
+  }
+
+  .aiExperimentalTxt {
+      font-size: 1.1rem;
+  }
+
+  .aiExperimentalImg {
+      max-width: 350px;
+  }
+}
+
+  /* ------------------------------- STYLE FOR THE MAPS ------------------------------- */
+ 
+  .mapsContainer {
+    width: 100%;
+    padding: 20px;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    text-align: center;
+}
+
+.mapsContent {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.mapsTitle {
+    font-size: 2rem;
+    color: #1565c0;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.mapsTxt {
+    font-size: 1.2rem;
+    color: #424242;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Imagen del mapa */
+.mapsImg {
+    display: block;
+    max-width: 70%;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* 🌍 Responsividad */
+@media (max-width: 768px) { /* 📱 Tablet */
+    .mapsTitle {
+        font-size: 1.8rem;
+    }
+    .mapsTxt {
+        font-size: 1rem;
+    }
+    .mapsImg {
+        max-width: 350px;
+    }
+}
+
+@media (max-width: 480px) { /* 📱 Móvil */
+    .mapsTitle {
+        font-size: 1.5rem;
+    }
+    .mapsTxt {
+        font-size: 0.9rem;
+    }
+    .mapsImg {
+        max-width: 280px;
+    }
+}
+
+  
+  /* ------------------------------- STYLE FOR THE PACKAGES ------------------------------- */
+.packageIdContainer {
+  padding: 20px 0;
+}
+  .packageContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.packageItem {
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: 100%;
+    transition: all .3s;
+}
+
+.packageItem:hover {
+  transform: scale(1.02);
+}
+
+.packageTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d32f2f;
+    border-bottom: 3px solid #d32f2f;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.packageP {
+    font-size: 17px;
+    margin: 5px 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.packageContentPrice {
+    margin-top: 10px;
+}
+
+.packageBeforePrice, .packagePriceBefore {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.packagePriceBefore{
+  margin-bottom: 5px;
+}
+
+.packageOfferPrice {
+    font-weight: bold;
+    color: #a50606;
+}
+
+.packagePrice {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #d32f2f;
+}
+
+.packageButton {
+    background: #f53232;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.packageButton:hover {
+    background: #df1818;
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+    .packageContainer {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}
+
+/* ------------------------------- ######################### ------------------------------- */
+/* ------------------------------- STYLE FOR THE OPINIONS ------------------------------- */
+/* ------------------------------- ######################### ------------------------------- */
+
+/* Contenedor principal */
+.opinionsContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 90px auto;
+  padding: 20px;
+  background: linear-gradient(to right, #ffffff, #f4f4f4);
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.opinionsContainer {
+  color: #0072ec;
+}
+
+/* Contenedor flex para los comentarios */
+.opinionsContentFlex {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Cada opinión */
+.opinionsContentItem {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.opinionsContentItem:hover {
+  transform: scale(1.02);
+}
+
+/* Contenedor del perfil */
+.opinionsContentItemContainerProfile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* Imagen del usuario */
+.opinionsContentItemProfile {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 2px solid #007bff;
+  object-fit: cover;
+}
+
+/* Nombre del usuario */
+.opinionsContentUser {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Opinión del usuario */
+.opinionsContentOpinion {
+  font-size: 0.9rem;
+  color: #555;
+  margin-top: 8px;
+  line-height: 1.5;
+}
+
+/* Diseño responsivo */
+
+/* Tablets */
+@media (min-width: 768px) {
+  .opinionsContentFlex {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+
+  .opinionsContentItem {
+      width: 45%;
+      margin: 10px;
+  }
+}
+
+/* Computadoras */
+@media (min-width: 1024px) {
+  .opinionsContentItem {
+      width: 30%;
+  }
+}
+
+
+/* ------------------------------- ######################### ------------------------------- */
+/* ------------------------------- STYLE FOR THE SUSCRIPTION ------------------------------- */
+/* ------------------------------- ######################### ------------------------------- */
+
+/* Contenedor principal */
+.containerInfoSuscriptionSecurity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+/* Estilos comunes para ambas secciones */
+
+.containerInfoSuscriptionSecurityTitle {
+  text-align: center;
+  color: #d32f2f;
+  font-size: 34px;
+  margin: 50px 0;
+}
+.totalPayContainer,
+.securityContainer {
+  flex: 1;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease-in-out;
+}
+.totalPayContainer{
+  background: #fcd3d3; /* Fondo claro */
+}
+.securityContainer{
+  background: #e0f3ff; /* Fondo claro */
+}
+
+.totalPayTitle,
+.securityTitle {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #d32f2f; /* Rojo UX/UI */
+  margin-bottom: 10px;
+}
+
+.totalPayTxt,
+.securityTxt {
+  font-size: 16px;
+  color: #333;
+  line-height: 1.5;
+}
+
+/* Animaciones de fade-in */
+.totalPayContainer,
+.securityContainer {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+.visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+}
+
+.visibleSoft {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-in-out;
+}
+
+/* 📱 Móvil */
+@media (max-width: 600px) {
+  .containerInfoSuscriptionSecurity {
+      flex-direction: column;
+  }
+
+  .totalPayTitle,
+  .securityTitle {
+      font-size: 20px;
+  }
+
+  .totalPayTxt,
+  .securityTxt {
+      font-size: 14px;
+  }
+}
+
+/* 🖥️ Tablet y Laptop */
+@media (min-width: 601px) {
+  .containerInfoSuscriptionSecurity {
+      flex-direction: row;
+      align-items: stretch;
+  }
+
+  .totalPayContainer,
+  .securityContainer {
+      padding: 30px;
+  }
+
+  .totalPayTitle,
+  .securityTitle {
+      font-size: 26px;
+  }
+
+  .totalPayTxt,
+  .securityTxt {
+      font-size: 17px;
+  }
+}

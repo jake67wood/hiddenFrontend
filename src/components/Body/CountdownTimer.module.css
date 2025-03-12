@@ -1,0 +1,52 @@
+.countdownContainer {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: auto;
+}
+
+.countdownTitle {
+    font-size: 22px;
+    font-weight: bold;
+    color: #d32f2f;
+    margin-bottom: 10px;
+}
+
+.countdownTimer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.timeBox {
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 60px;
+}
+
+.timeBox span {
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.timeBox small {
+    font-size: 12px;
+    color: #777;
+}
+
+.offerExpired {
+    display: block;
+    font-size: 18px;
+    color: #d32f2f;
+    font-weight: bold;
+    margin-top: 10px;
+}

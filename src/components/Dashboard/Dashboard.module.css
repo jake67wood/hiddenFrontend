@@ -1,0 +1,109 @@
+.dashboardTitle {
+    text-align: center;
+    font-size: 34px;
+    color: #d32f2f;
+    margin: 30px 0;
+}
+.dashboardContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.dashboardItem {
+    background: #fff;
+    border-radius: 10px;
+    text-align: center;
+    padding: 30px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.2);
+    max-width: 300px;
+    width: 100%;
+    transition: all .3s;
+}
+
+.dashboardItem:hover {
+  transform: scale(1.02);
+}
+
+.dashboardItemTitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #d32f2f;
+    border-bottom: 3px solid #d32f2f;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.dashboardItemP {
+    font-size: 17px;
+    margin: 5px 0;
+    line-height: 1.5;
+    text-align: left;
+}
+
+.dashboardContentPrice {
+    margin-top: 10px;
+}
+
+.dashboardBefore, .dashboardBeforePrice {
+    text-decoration: line-through;
+    color: gray;
+    font-size: 14px;
+}
+
+.dashboardBeforePrice{
+  margin-bottom: 5px;
+}
+
+.dashboardOffer {
+    font-weight: bold;
+    color: #a50606;
+}
+
+.dashboardOfferPrice {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #d32f2f;
+}
+
+.dashboardButton {
+    background: #f53232;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.dashboardButton:hover {
+    background: #df1818;
+}
+
+/* Botón deshabilitado */
+.dashboardButton:disabled {
+    background: #979797;  /* Gris claro */
+    color: #ffffff;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
+
+.dashboardButton:disabled:hover {
+    background: #979797;  /* Mantiene el gris al hacer hover */
+}
+
+/* Responsivo */
+@media (min-width: 768px) {
+    .dashboardTitle {
+        font-size: 40px;
+    }
+    .dashboardContent {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+}

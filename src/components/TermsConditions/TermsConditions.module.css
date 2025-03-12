@@ -1,0 +1,56 @@
+/* Contenedor principal */
+.termsContainer {
+    max-width: 900px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Título principal */
+.termsTitle {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contenido de los términos */
+.termsContent {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #555;
+}
+
+/* Subtítulos */
+.termsSubtitle {
+    font-size: 1.3rem;
+    color: #222;
+    margin-top: 20px;
+}
+
+/* Lista */
+.termsContent ul {
+    padding-left: 20px;
+}
+
+.termsContent li {
+    margin-bottom: 10px;
+}
+
+/* Responsivo */
+
+/* Tablets */
+@media (min-width: 768px) {
+    .termsContainer {
+        padding: 30px;
+    }
+}
+
+/* Computadoras */
+@media (min-width: 1024px) {
+    .termsContent {
+        font-size: 1.1rem;
+    }
+}

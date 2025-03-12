@@ -1,0 +1,100 @@
+/* Contenedor principal */
+.supportContainer {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Título */
+.supportTitle {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Descripción */
+.supportText {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Mensaje de éxito */
+.successMessage {
+    color: #28a745;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+/* Grupos de formularios */
+.formGroup {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+/* Etiquetas */
+.formLabel {
+    display: block;
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Campos de entrada */
+.formInput, .formTextarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+/* Área de texto */
+.formTextarea {
+    height: 100px;
+    resize: none;
+}
+
+/* Botón */
+.formButton {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.formButton:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (min-width: 768px) {
+    .supportContainer {
+        max-width: 600px;
+    }
+    .supportTitle {
+        font-size: 2rem;
+    }
+}
+
+/* Computadoras */
+@media (min-width: 1024px) {
+    .supportContainer {
+        max-width: 700px;
+    }
+    .formButton {
+        font-size: 1.2rem;
+    }
+}

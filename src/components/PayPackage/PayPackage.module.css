@@ -1,0 +1,155 @@
+/* Contenedor principal */
+.payPackageContainer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Título */
+.payPackageTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Contenedor FLEX de los paquetes y métodos de pago */
+.payPackageContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilos del paquete seleccionado */
+.payPackageItem {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+}
+
+.payPackageItemTitle {
+    font-size: 22px;
+    background: linear-gradient(135deg, #6e8efb, #a777e3);
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+.payPackageItemP {
+    font-size: 16px;
+    color: #555;
+    margin: 5px 0;
+}
+
+/* Precios */
+.payPackageContentPrice {
+    margin-top: 10px;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.payPackageBefore {
+    font-size: 14px;
+    color: #888;
+}
+
+.payPackageBeforePrice {
+    text-decoration: line-through;
+    color: #d9534f;
+    font-weight: bold;
+}
+
+.payPackageOffer {
+    font-size: 16px;
+    color: #28a745;
+    font-weight: bold;
+}
+
+.payPackageOfferPrice {
+    font-size: 20px;
+    font-weight: bold;
+    color: #28a745;
+}
+
+/* Botón de compra */
+.payPackageButton {
+    color: #a777e3;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+
+
+/* Métodos de pago */
+.paypalMethodContainer {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 300px;
+}
+
+.paypalMethodTitle {
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.paypalMethodButton {
+    background: #ffc439;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.paypalMethodButton:hover {
+    background: #e0a800;
+}
+
+/* 📌 Responsive Design */
+
+/* Tablet */
+@media (min-width: 480px) {
+    .payPackageContent {
+        flex-direction: column;
+    }
+
+    .payPackageItem, .paypalMethodContainer {
+        width: 80%;
+    }
+}
+
+/* Laptop */
+@media (min-width: 1024px) {
+    .payPackageContent {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .payPackageItem, .paypalMethodContainer {
+        width: 45%;
+    }
+}

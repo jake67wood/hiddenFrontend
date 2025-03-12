@@ -1,0 +1,114 @@
+/* Contenedor principal */
+.payedContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: center;
+    background: linear-gradient(to right, #ffffff, #f4f4f4);
+    padding: 20px;
+}
+
+/* Icono de check ✅ */
+.payedIcon {
+    font-size: 5rem;
+    color: #28a745;
+    margin-bottom: 15px;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Animación de entrada */
+@keyframes fadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+}
+
+/* Título */
+.payedTitle {
+    font-size: 2.2rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Texto de agradecimiento */
+.payedTxt {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 500px;
+    margin-bottom: 20px;
+}
+
+/* Contenedor de información */
+.payedDetails {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    margin-bottom: 20px;
+    animation: fadeIn 0.7s ease-in-out;
+}
+
+/* Filas de información */
+.payedDetails p {
+    font-size: 1rem;
+    color: #444;
+    margin: 8px 0;
+    text-align: left;
+}
+
+/* Botón de regreso */
+.payedButton {
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.3s ease;
+}
+
+.payedButton:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Design */
+
+/* Tablets */
+@media (min-width: 768px) {
+    .payedContainer {
+        padding: 40px;
+    }
+    .payedTitle {
+        font-size: 2.5rem;
+    }
+    .payedTxt {
+        font-size: 1.4rem;
+    }
+    .payedDetails {
+        max-width: 450px;
+    }
+}
+
+/* Computadoras */
+@media (min-width: 1024px) {
+    .payedContainer {
+        height: 100vh;
+        padding: 60px;
+    }
+    .payedTitle {
+        font-size: 3rem;
+    }
+    .payedTxt {
+        font-size: 1.6rem;
+    }
+    .payedDetails {
+        max-width: 500px;
+    }
+}
