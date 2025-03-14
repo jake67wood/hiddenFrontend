@@ -27,7 +27,7 @@ function App() {
   useEffect(()=>{
     const checkSession = async ()=>{
       try {
-        const response = await axios.get('http://localhost:5000/api/auth/session',{
+        const response = await axios.get('https://hiddenserver-i7sc.onrender.com/api/auth/session',{
         withCredentials:true
         })
         if (response.data && response.data.user) {
@@ -42,7 +42,7 @@ function App() {
   }, [])
 
       const handleLogout = async () =>{
-        await axios.post('http://localhost:5000/api/auth/logout',{},{
+        await axios.post('https://hiddenserver-i7sc.onrender.com/api/auth/logout',{},{
           withCredentials: true
         })
         setUser(null)
