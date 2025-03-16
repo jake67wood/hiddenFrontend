@@ -33,8 +33,10 @@ function App() {
         if (response.data && response.data.user) {
           setUser(response.data.user)
           console.log('Error al checar sesion',response.data.user)
+          console.log('check sesion')
         }
       } catch (error) {
+        console.log('Error check sesion')
         setUser(null)
       }
     }
