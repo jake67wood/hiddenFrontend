@@ -30,23 +30,11 @@ function App() {
         const response = await axios.get('https://hiddenserver-i7sc.onrender.com/api/auth/session',{
         withCredentials:true
         })
-/*         if (response.data && response.data.user) {
+         if (response.data && response.data.user) {
           setUser(response.data.user)
-          console.log('Error al checar sesion',response.data.user)
           console.log('check sesion')
         }
- */
-
-         if (response.status === 200) {
-          setUser(response.data.user)
-          console.log('Error al checar sesion',response.data.user)
-          console.log('check sesion')
-        }
-
-        if (response.status === 401) {
-          setUser(null)
-          console.log('Error try')
-        }
+ 
 } catch (error) {
         console.log('Error check sesion:', error.response ? error.response.data : error.message);
         setUser(null)
