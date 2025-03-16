@@ -36,7 +36,7 @@ function App() {
           console.log('check sesion')
         }
       } catch (error) {
-        console.log('Error check sesion')
+        console.log('Error check sesion:', error.response ? error.response.data : error.message);
         setUser(null)
       }
     }
