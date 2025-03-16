@@ -32,7 +32,7 @@ function App() {
         })
         if (response.data && response.data.user) {
           setUser(response.data.user)
-          console.log(response.data.user)
+          console.log('Error al checar sesion',response.data.user)
         }
       } catch (error) {
         setUser(null)
