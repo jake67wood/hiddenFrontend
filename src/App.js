@@ -27,9 +27,13 @@ function App() {
   useEffect(()=>{
     const checkSession = async ()=>{
       try {
+          console.log('check try')
+        
         const response = await axios.get('https://hiddenserver-i7sc.onrender.com/api/auth/session',{
         withCredentials:true
         })
+          console.log('check response')
+        
          if (response.data && response.data.user) {
           setUser(response.data.user)
           console.log('check sesion')
