@@ -20,6 +20,7 @@ export default function Login({ setUser }) {
 				console.log(res.data.message);
 				setError('');
 				setUser(res.data.user);
+				localStorage.setItem('user', JSON.stringify(res.data.user)); // Guarda en localStorage
 				navigate('/');
 			} else if (res.status === 401) {
 				setError(res.data.message);
