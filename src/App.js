@@ -23,11 +23,12 @@ import axios from 'axios';
 
 function App() {
   const [user, setUser] = useState(null)
+  console.log('user empty',user)
 
   useEffect(()=>{
     const checkSession = async ()=>{
       try {
-          console.log('check try',user)
+          console.log('check try')
         
         const response = await axios.get(`https://hiddenserver-i7sc.onrender.com/api/auth/session/${user}`,{
         withCredentials:true
