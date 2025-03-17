@@ -37,7 +37,7 @@ function App() {
         console.log('Usuario cargado desde localStorage:', storedUser.username);
       }
         
-        const response = await axios.get(`https://hiddenserver-i7sc.onrender.com/api/auth/session/${storedUser}`,{
+        const response = await axios.get(`https://hiddenserver-i7sc.onrender.com/api/auth/session/${storedUser.username}`,{
         withCredentials:true
         })
           console.log('check response')
