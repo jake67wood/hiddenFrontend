@@ -61,7 +61,7 @@ function App() {
   }, [])
 
       const handleLogout = async () =>{
-        await axios.post('https://hiddenserver-i7sc.onrender.com/api/auth/logout',{
+        const response = await axios.post('https://hiddenserver-i7sc.onrender.com/api/auth/logout',{
           username: user
         },{
           withCredentials: true,
@@ -69,7 +69,6 @@ function App() {
       if (response.data.message === 'Logout exitoso') {
       setUser(null); // Reinicia el estado local
       localStorage.removeItem('user'); // Elimina el usuario de localStorage
-      navigate('/'); // Redirige al login
     }
       }
   
