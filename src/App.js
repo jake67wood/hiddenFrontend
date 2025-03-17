@@ -37,13 +37,12 @@ function App() {
         console.log('Usuario cargado desde localStorage:', storedUser);
       }
         
-        const response = await axios.get(`https://hiddenserver-i7sc.onrender.com/api/auth/session/${user}`,{
+        const response = await axios.get(`https://hiddenserver-i7sc.onrender.com/api/auth/session/${storedUser}`,{
         withCredentials:true
         })
           console.log('check response')
         
          if (response.data && response.data.user) {
-          setUser(response.data.user)
           console.log('check sesion')
         } else {
         console.log('El usuario no tiene una sesión activa');
