@@ -43,7 +43,6 @@ function App() {
           console.log('check response')
         
          if (response.data && response.data.user) {
-           setUser(response.data.user)
           console.log('check sesion')
         } else {
         console.log('El usuario no tiene una sesión activa');
