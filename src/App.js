@@ -34,7 +34,7 @@ function App() {
       const storedUser = JSON.parse(localStorage.getItem('user'));
       if (storedUser) {
         setUser(storedUser); // Actualiza el estado local
-        console.log('Usuario cargado desde localStorage:', storedUser);
+        console.log('Usuario cargado desde localStorage:', storedUser.username);
       }
         
         const response = await axios.get(`https://hiddenserver-i7sc.onrender.com/api/auth/session/${storedUser}`,{
