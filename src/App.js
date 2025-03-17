@@ -29,7 +29,7 @@ function App() {
       try {
           console.log('check try')
         
-        const response = await axios.get('https://hiddenserver-i7sc.onrender.com/api/auth/session',{
+        const response = await axios.get(`https://hiddenserver-i7sc.onrender.com/api/auth/session/${user}`,{
         withCredentials:true
         })
           console.log('check response')
