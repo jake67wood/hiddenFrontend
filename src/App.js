@@ -22,7 +22,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 function App() {
-  const [user, setUser] = useState('jakewood6788@gmail.com')
+  const [user, setUser] = useState(null)
   console.log('user empty',user)
 
   useEffect(()=>{
