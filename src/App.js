@@ -44,12 +44,9 @@ function App() {
         
          if (response.data && response.data.user) {
           setUser(response.data.user)
-           localStorage.setItem('user', JSON.stringify(response.data.user)); // Guarda en localStorage
           console.log('check sesion')
         } else {
         console.log('El usuario no tiene una sesión activa');
-                   setUser(null); // Reinicia el estado si no hay sesión
-        localStorage.removeItem('user'); // Elimina el usuario de localStorage
       }
  
 } catch (error) {
