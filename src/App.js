@@ -37,7 +37,9 @@ function App() {
          if (response.data && response.data.user) {
           setUser(response.data.user)
           console.log('check sesion')
-        }
+        } else {
+        console.log('El usuario no tiene una sesión activa');
+      }
  
 } catch (error) {
         console.log('Error check sesion:', error.response ? error.response.data : error.message);
@@ -48,8 +50,10 @@ function App() {
   }, [])
 
       const handleLogout = async () =>{
-        await axios.post('https://hiddenserver-i7sc.onrender.com/api/auth/logout',{},{
-          withCredentials: true
+        await axios.post('https://hiddenserver-i7sc.onrender.com/api/auth/logout',{
+          username: user
+        },{
+          withCredentials: true,
         })
         setUser(null)
       }
