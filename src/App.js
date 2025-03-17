@@ -29,6 +29,13 @@ function App() {
     const checkSession = async ()=>{
       try {
           console.log('check try')
+      
+      // Carga el usuario desde localStorage
+      const storedUser = JSON.parse(localStorage.getItem('user'));
+      if (storedUser) {
+        setUser(storedUser); // Actualiza el estado local
+        console.log('Usuario cargado desde localStorage:', storedUser);
+      }
         
         const response = await axios.get(`https://hiddenserver-i7sc.onrender.com/api/auth/session/${user}`,{
         withCredentials:true
@@ -37,9 +44,12 @@ function App() {
         
          if (response.data && response.data.user) {
           setUser(response.data.user)
+           localStorage.setItem('user', JSON.stringify(response.data.user)); // Guarda en localStorage
           console.log('check sesion')
         } else {
         console.log('El usuario no tiene una sesión activa');
+                   setUser(null); // Reinicia el estado si no hay sesión
+        localStorage.removeItem('user'); // Elimina el usuario de localStorage
       }
  
 } catch (error) {
@@ -56,7 +66,11 @@ function App() {
         },{
           withCredentials: true,
         })
-        setUser(null)
+      if (response.data.message === 'Logout exitoso') {
+      setUser(null); // Reinicia el estado local
+      localStorage.removeItem('user'); // Elimina el usuario de localStorage
+      navigate('/'); // Redirige al login
+    }
       }
   
   return (
