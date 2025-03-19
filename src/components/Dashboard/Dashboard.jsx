@@ -11,7 +11,7 @@ export default function Dashboard({ user }){
     useEffect(() => {
         const dashboardInfo = async () => {
             try {
-                const res = await axios.get(`http://localhost:5000/api/auth/dashboard-info`, {
+                const res = await axios.get(`https://hiddenserver-i7sc.onrender.com/api/auth/dashboard-info`, {
                     params: { us: user }
                 });
 
