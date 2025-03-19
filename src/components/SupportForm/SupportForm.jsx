@@ -19,7 +19,7 @@ export default function SupportForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await axios.post("http://localhost:5000/api/auth/support", formData);
+            const res = await axios.post("https://hiddenserver-i7sc.onrender.com/api/auth/support", formData);
             if (res.status === 200) {
                 setSuccessMessage("Tu mensaje ha sido enviado con éxito. Te responderemos pronto.");
                 setFormData({ name: "", email: "", subject: "", message: "" });
