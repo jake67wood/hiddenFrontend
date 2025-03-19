@@ -10,7 +10,7 @@ export default function PayPackage(){
         try {
             const today = new Date().toLocaleDateString();
     
-            const res = await axios.post('http://localhost:5000/api/auth/paypal/create-order', {
+            const res = await axios.post('https://hiddenserver-i7sc.onrender.com/api/auth/paypal/create-order', {
                 package: packageName, 
                 isPaid: 1, 
                 price: priceDefault[1], 
